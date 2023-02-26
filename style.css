@@ -1,0 +1,134 @@
+html {
+    font-size: 62.5%;  /*10px*/
+    
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    color: rgb(3, 3, 84);
+    text-align: center;
+    font-size: 5rem;
+    margin: 5rem;
+}
+
+
+.container {
+    background-color: rgb(222, 244, 238);
+    border-radius: 2rem;
+    padding: 5rem;
+    width: 50vw;
+    height: auto;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+label {
+    font-size: 4rem;
+    text-align: center;
+}
+
+input {
+    width: 80%;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: .3rem;
+    text-align: center;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+    background-color: rgb(5, 18, 107);
+    border-color: transparent;
+    color: white;
+    font-size: 2rem;
+    border-radius: .3rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    transition: all .5s ease;
+
+}
+
+button:hover {
+    background-color: rgb(57, 67, 130);
+}
+
+#note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 1rem;
+}
+
+#note.valid {
+    background-color: #b5ebb5;
+    color: #0a820a;
+}
+
+#note.invalid {
+    background-color: #f4d0d0;
+    color: rgb(158, 2, 2);
+}
+
+
+
+#invalid.hide {
+    display: none;
+}
+
+#valid.hide {
+    display: none;
+}
+
+#company.hide {
+    display: none;
+}
+
+
+#invalid {
+    display: block;
+}
+
+#valid {
+    display: block;
+}
+
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 36em) {
+
+    html {
+        font-size: 60%;
+    }
+
+    button {
+        width: auto;
+    }
+    
+}
