@@ -23,10 +23,16 @@ h1 {
     margin: 5rem;
 }
 
+h2 {
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
 
 .container {
     background-color: rgb(222, 244, 238);
     border-radius: 2rem;
+    margin: 2rem;
     padding: 5rem;
     width: 50vw;
     height: auto;
@@ -50,8 +56,9 @@ input {
     width: 80%;
     font-size: 2rem;
     padding: 1rem;
-    margin: 3rem;
+    margin: 4rem;
     border-radius: .3rem;
+    border-color: #041c65;
     text-align: center;
 
 }
@@ -120,11 +127,20 @@ button:hover {
     display: block;
 }
 
+ul {
+    margin: 4rem
+}
+
+ul li {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
 /* Extra small devices (phones, 576px and down) */
 @media only screen and (max-width: 36em) {
 
     html {
-        font-size: 60%;
+        font-size: 50%;
     }
 
     button {

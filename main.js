@@ -13,6 +13,13 @@ const invalidNote = document.getElementById("invalid");
 const company = document.getElementById("company");
 const noteStyle = document.getElementById("note")
 
+const validNums = (arr) => {
+  const num = arr.join("");
+  console.log(num);
+  }
+
+
+validNums(valid5);
 
 
 ///check if the card is valid or not
@@ -93,13 +100,13 @@ const validation = () => {
     invalidNote.classList.add("hide");
     validNote.classList.remove("hide");
     company.classList.remove("hide");
-    company.innerHTML = "Your credit card company: "+cardCompanies(numArr);
+    company.innerHTML = "Credit Card's issuer is "+cardCompanies(numArr);
     
     noteStyle.classList.add("valid");
     noteStyle.classList.remove("invalid");
   } else {
     
-    invalidNote.innerHTML = "Your credit card number is invalid! Please check your number and correct it.";
+    invalidNote.innerHTML = "Your credit card number is invalid! Please check your number.";
     validNote.classList.add("hide");
     invalidNote.classList.remove("hide");
     company.classList.add("hide");
