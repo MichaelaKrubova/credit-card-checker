@@ -128,12 +128,17 @@ button:hover {
 }
 
 ul {
-    margin: 4rem
+    margin-top: 4rem;
 }
 
 ul li {
     font-size: 2rem;
-    padding: 1rem;
+    padding-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
 }
 
 /* Extra small devices (phones, 576px and down) */
